@@ -47,6 +47,15 @@ struct PlayerStats: Codable {
     // Add more fields as needed
 }
 
+struct NewsItem: Codable, Identifiable {
+    let title: String
+    let link: String
+    let img: String
+    let short_desc: String
+    
+    var id: String { link } // Using link as a unique identifier
+}
+
 struct GlobalStats: Codable {
     let name: String
     let uid: String

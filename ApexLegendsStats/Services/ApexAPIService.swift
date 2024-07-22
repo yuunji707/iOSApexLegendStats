@@ -25,6 +25,13 @@ class ApexAPIService {
         return result
     }
     
+    func fetchNews() async throws -> [NewsItem] {
+        let urlString = "\(baseURL)/news?auth=\(apiKey)"
+        let (data, _) = try await URLSession.shared.data(from: URL(string: urlString)!)
+        let decoder = JSONDecoder()
+        return try decoder.decode([NewsItem].self, from: data)
+    }
+    
     private func performRequest<T: Decodable>(with urlString: String) -> Observable<T> {
         guard let url = URL(string: urlString) else {
             return Observable.error(NSError(domain: "Invalid URL", code: 0, userInfo: nil))
