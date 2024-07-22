@@ -19,9 +19,15 @@ struct ContentView: View {
                 .tabItem {
                     Label("Player Stats", systemImage: "person")
                 }
+            
             NewsView()
                 .tabItem {
                     Label("News", systemImage: "newspaper")
+                }
+            
+            ServerStatusView()
+                .tabItem {
+                    Label("Server Status", systemImage: "network")
                 }
         }
     }

@@ -20,6 +20,8 @@
 		AB15238A2C4B792800FA6FA7 /* PlayerStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1523892C4B792800FA6FA7 /* PlayerStatsView.swift */; };
 		ABD78C372C4E5FFC00ED9EC4 /* NewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD78C362C4E5FFC00ED9EC4 /* NewsController.swift */; };
 		ABD78C392C4E601B00ED9EC4 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD78C382C4E601B00ED9EC4 /* NewsView.swift */; };
+		ABD78C3B2C4EE58700ED9EC4 /* ServerStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD78C3A2C4EE58700ED9EC4 /* ServerStatusView.swift */; };
+		ABD78C3D2C4EE5CC00ED9EC4 /* ServerStatusController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD78C3C2C4EE5CC00ED9EC4 /* ServerStatusController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		AB1523892C4B792800FA6FA7 /* PlayerStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStatsView.swift; sourceTree = "<group>"; };
 		ABD78C362C4E5FFC00ED9EC4 /* NewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsController.swift; sourceTree = "<group>"; };
 		ABD78C382C4E601B00ED9EC4 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		ABD78C3A2C4EE58700ED9EC4 /* ServerStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerStatusView.swift; sourceTree = "<group>"; };
+		ABD78C3C2C4EE5CC00ED9EC4 /* ServerStatusController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerStatusController.swift; sourceTree = "<group>"; };
 		D25770714456904CE82D720A /* Pods-ApexLegendsStats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApexLegendsStats.release.xcconfig"; path = "Target Support Files/Pods-ApexLegendsStats/Pods-ApexLegendsStats.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +121,7 @@
 				AB1523872C4B78CA00FA6FA7 /* MapRotationView.swift */,
 				AB1523892C4B792800FA6FA7 /* PlayerStatsView.swift */,
 				ABD78C382C4E601B00ED9EC4 /* NewsView.swift */,
+				ABD78C3A2C4EE58700ED9EC4 /* ServerStatusView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -127,6 +132,7 @@
 				AB1523832C4B784300FA6FA7 /* MapRotationController.swift */,
 				AB1523852C4B786400FA6FA7 /* PlayerStatsController.swift */,
 				ABD78C362C4E5FFC00ED9EC4 /* NewsController.swift */,
+				ABD78C3C2C4EE5CC00ED9EC4 /* ServerStatusController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -270,6 +276,8 @@
 				AB15236F2C4B749B00FA6FA7 /* ContentView.swift in Sources */,
 				ABD78C372C4E5FFC00ED9EC4 /* NewsController.swift in Sources */,
 				AB15236D2C4B749B00FA6FA7 /* ApexLegendsStatsApp.swift in Sources */,
+				ABD78C3B2C4EE58700ED9EC4 /* ServerStatusView.swift in Sources */,
+				ABD78C3D2C4EE5CC00ED9EC4 /* ServerStatusController.swift in Sources */,
 				AB15238A2C4B792800FA6FA7 /* PlayerStatsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

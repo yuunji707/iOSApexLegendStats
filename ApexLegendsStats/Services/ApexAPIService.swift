@@ -32,6 +32,11 @@ class ApexAPIService {
         return try decoder.decode([NewsItem].self, from: data)
     }
     
+    func fetchServerStatus() async throws -> ServerStatus {
+        let urlString = "\(baseURL)/servers?auth=\(apiKey)"
+        return try await performRequestAsync(with: urlString, decodingType: ServerStatus.self)
+    }
+    
     private func performRequest<T: Decodable>(with urlString: String) -> Observable<T> {
         guard let url = URL(string: urlString) else {
             return Observable.error(NSError(domain: "Invalid URL", code: 0, userInfo: nil))
