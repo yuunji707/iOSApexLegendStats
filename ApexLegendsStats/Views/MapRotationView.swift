@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import RxSwift
+import RxCocoa
 
 struct MapRotationView: View {
     @StateObject private var controller = MapRotationController()
@@ -29,11 +31,6 @@ struct MapRotationView: View {
                     Text(errorMessage)
                         .foregroundColor(.red)
                 }
-                
-                Button("Refresh") {
-                    controller.fetchMapRotation()
-                }
-                .padding()
             }
         }
         .onAppear {
