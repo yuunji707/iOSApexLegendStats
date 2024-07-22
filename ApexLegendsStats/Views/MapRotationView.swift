@@ -13,25 +13,28 @@ struct MapRotationView: View {
     @StateObject private var controller = MapRotationController()
     
     var body: some View {
-        ScrollView {
-            VStack(spacing: 20) {
-                Text("Apex Legends Map Rotation")
-                    .font(.title)
-                    .padding()
-                
-                if controller.isLoading {
-                    ProgressView()
-                } else {
-                    mapRotationSection(title: "Battle Royale", rotation: controller.battleRoyale)
-                    mapRotationSection(title: "Ranked", rotation: controller.ranked)
-                    mapRotationSection(title: "Mixtape", rotation: controller.mixtape)
+        NavigationView {
+            ScrollView {
+                LazyVStack(spacing: 16) {
+                    if controller.isLoading {
+                        ProgressView()
+                            .scaleEffect(1.5)
+                            .padding()
+                    } else {
+                        mapRotationSection(title: "Battle Royale", rotation: controller.battleRoyale)
+                        mapRotationSection(title: "Ranked", rotation: controller.ranked)
+                        mapRotationSection(title: "Mixtape", rotation: controller.mixtape)
+                    }
+                    
+                    if let errorMessage = controller.errorMessage {
+                        Text(errorMessage)
+                            .foregroundColor(.red)
+                            .padding()
+                    }
                 }
-                
-                if let errorMessage = controller.errorMessage {
-                    Text(errorMessage)
-                        .foregroundColor(.red)
-                }
+                .padding(.horizontal)
             }
+            .navigationTitle("Map Rotation")
         }
         .onAppear {
             controller.fetchMapRotation()
@@ -41,33 +44,62 @@ struct MapRotationView: View {
     @ViewBuilder
     func mapRotationSection(title: String, rotation: MapRotation?) -> some View {
         if let rotation = rotation {
-            VStack(alignment: .leading, spacing: 10) {
-                Text(title).font(.headline)
-                mapInfoView(info: rotation.current, label: "Current")
-                mapInfoView(info: rotation.next, label: "Next")
+            VStack(alignment: .leading, spacing: 12) {
+                Text(title)
+                    .font(.headline)
+                    .fontWeight(.bold)
+                
+                mapInfoView(info: rotation.current, label: "Current Map")
+                mapInfoView(info: rotation.next, label: "Next Map")
             }
             .padding()
-            .background(Color.gray.opacity(0.1))
-            .cornerRadius(10)
+            .background(Color(.secondarySystemBackground))
+            .cornerRadius(12)
         }
     }
     
     @ViewBuilder
     func mapInfoView(info: MapInfo, label: String) -> some View {
-        VStack(alignment: .leading) {
-            Text("\(label): \(info.map)")
+        VStack(alignment: .leading, spacing: 8) {
+            HStack {
+                Text(label)
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
+                
+                Spacer()
+                
+                if let remainingTime = info.remainingTimer {
+                    HStack(spacing: 4) {
+                        Text("Time remaining:")
+                            .font(.caption)
+                            .foregroundColor(.secondary)
+                        Text(remainingTime)
+                            .font(.caption)
+                            .foregroundColor(.blue)
+                    }
+                }
+            }
+            
+            Text(info.map)
+                .font(.body)
+                .fontWeight(.semibold)
+            
             if let eventName = info.eventName {
-                Text("Event: \(eventName)")
+                Text(eventName)
+                    .font(.caption)
+                    .foregroundColor(.orange)
             }
-            if let remainingTime = info.remainingTimer {
-                Text("Time Remaining: \(remainingTime)")
-            }
+            
             AsyncImage(url: URL(string: info.asset)) { image in
-                image.resizable().aspectRatio(contentMode: .fit)
+                image
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
             } placeholder: {
                 ProgressView()
             }
             .frame(height: 100)
+            .cornerRadius(8)
+            .clipped()
         }
     }
 }
