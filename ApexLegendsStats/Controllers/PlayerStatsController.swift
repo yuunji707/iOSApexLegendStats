@@ -27,20 +27,17 @@ class PlayerStatsController: ObservableObject {
         
         Task {
             do {
-                print("Fetching stats for player: \(playerName) on platform: \(platform)")
                 let fetchedStats = try await apiService.fetchPlayerStats(playerName: playerName, platform: platform)
                 DispatchQueue.main.async {
                     self.stats = fetchedStats
                     self.errorMessage = nil
                     self.isLoading = false
-                    print("Received stats: \(fetchedStats)")
                 }
             } catch {
                 DispatchQueue.main.async {
                     self.errorMessage = "Error: \(error.localizedDescription)"
                     self.isLoading = false
                     self.stats = nil
-                    print("Error fetching stats: \(error)")
                 }
             }
         }

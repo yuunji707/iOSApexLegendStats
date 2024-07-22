@@ -33,7 +33,7 @@ struct NewsView: View {
                     .frame(maxWidth: .infinity, alignment: .center)
                 }
             }
-            .navigationTitle("Apex News")
+            .navigationTitle("Apex Legends News")
             .onAppear {
                 Task {
                     await loadNews()
