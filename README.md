@@ -63,22 +63,3 @@ This separation of concerns allows for better organization, maintainability, and
 ## API Usage
 
 This app relies on the Apex Legends API (apexlegendsapi.com) for all its data. Please ensure you comply with their terms of service and usage limits. You may need to sign up for an account and obtain an API key to use their services.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request. When contributing, please respect the existing MVC architecture to maintain consistency across the project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
-## Acknowledgments
-
-- Special thanks to [Apex Legends API](https://apexlegendsapi.com) for providing the comprehensive data that powers this app.
-- Icon assets from [SomeIconProvider](https://someiconprovider.com).
-
----
-
-## Contact
-
-If you have any questions, feel free to reach out to [Your Name](mailto:your.email@example.com).
