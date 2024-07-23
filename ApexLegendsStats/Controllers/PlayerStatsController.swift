@@ -7,7 +7,9 @@
 
 import Foundation
 
+/// Controller class for managing player statistics in Apex Legends
 class PlayerStatsController: ObservableObject {
+    // Published properties for player information and stats
     @Published var playerName: String = ""
     @Published var platform: String = "PC"
     @Published var stats: PlayerStats?
@@ -16,6 +18,7 @@ class PlayerStatsController: ObservableObject {
     
     private let apiService = ApexAPIService()
     
+    /// Fetches player statistics from the API
     func fetchPlayerStats() {
         guard !playerName.isEmpty else {
             errorMessage = "Please enter a player name"

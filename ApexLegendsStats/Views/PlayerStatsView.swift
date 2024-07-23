@@ -7,9 +7,12 @@
 
 import SwiftUI
 
+/// A view that displays player statistics for Apex Legends
 struct PlayerStatsView: View {
     @StateObject private var controller = PlayerStatsController()
     @State private var isSearchExpanded = false
+    
+    // MARK: - Body
     
     var body: some View {
         NavigationView {
@@ -37,6 +40,9 @@ struct PlayerStatsView: View {
         }
     }
     
+    // MARK: - Subviews
+    
+    /// Search section including player name input and platform selection
     private var searchSection: some View {
         VStack(spacing: 15) {
             HStack {
@@ -47,6 +53,7 @@ struct PlayerStatsView: View {
                     .textFieldStyle(PlainTextFieldStyle())
                     .autocapitalization(.none)
                 
+                // Clear button appears when text is not empty
                 if !controller.playerName.isEmpty {
                     Button(action: {
                         controller.playerName = ""
@@ -76,6 +83,7 @@ struct PlayerStatsView: View {
         }
     }
     
+    /// Buttons for selecting the player's platform
     private var platformButtons: some View {
         HStack(spacing: 10) {
             platformButton(title: "PC", platform: "PC")
@@ -84,6 +92,7 @@ struct PlayerStatsView: View {
         }
     }
     
+    /// Creates a button for a specific platform
     private func platformButton(title: String, platform: String) -> some View {
         Button(action: {
             controller.platform = platform
@@ -101,6 +110,7 @@ struct PlayerStatsView: View {
         }
     }
     
+    /// Displays the player's statistics
     private func statsContent(_ stats: PlayerStats) -> some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 20) {
@@ -115,7 +125,9 @@ struct PlayerStatsView: View {
     }
 }
 
-// PlayerLevelView, PlayerRankView, and SelectedLegendView remain unchanged
+// MARK: - Subviews
+
+/// Displays the player's current level and progress to the next level
 struct PlayerLevelView: View {
     let level: Int
     let toNextLevelPercent: Int
@@ -136,6 +148,7 @@ struct PlayerLevelView: View {
     }
 }
 
+/// Displays the player's current rank
 struct PlayerRankView: View {
     let rank: Rank
     
@@ -163,6 +176,7 @@ struct PlayerRankView: View {
     }
 }
 
+/// Displays information about the player's selected legend
 struct SelectedLegendView: View {
     let selectedLegend: SelectedLegend
     

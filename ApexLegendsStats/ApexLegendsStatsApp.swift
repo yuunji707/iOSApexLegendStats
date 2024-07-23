@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct ApexLegendsStatsApp: App {
+    // Controls whether to show the launch screen or main content
     @State private var isActive = false
     
     var body: some Scene {
@@ -16,6 +17,7 @@ struct ApexLegendsStatsApp: App {
             if isActive {
                 ContentView()
             } else {
+                // Display launch screen and transition to main content after a delay
                 LaunchScreenView()
                     .onAppear {
                         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
@@ -29,6 +31,7 @@ struct ApexLegendsStatsApp: App {
     }
 }
 
+/// Displays the launch screen image
 struct LaunchScreenView: View {
     var body: some View {
         GeometryReader { geometry in

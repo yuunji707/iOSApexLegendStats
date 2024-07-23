@@ -9,7 +9,9 @@ import Foundation
 import RxSwift
 import RxCocoa
 
+/// Controller class for managing map rotation data in Apex Legends
 class MapRotationController: ObservableObject {
+    // Published properties for different game modes
     @Published var battleRoyale: MapRotation?
     @Published var ranked: MapRotation?
     @Published var mixtape: MapRotation?
@@ -24,6 +26,7 @@ class MapRotationController: ObservableObject {
         setupTimer()
     }
     
+    /// Fetches the current map rotation from the API
     func fetchMapRotation() {
         isLoading = true
         errorMessage = nil
@@ -43,6 +46,7 @@ class MapRotationController: ObservableObject {
             .disposed(by: disposeBag)
     }
     
+    /// Sets up a timer to update the remaining time for map rotations
     private func setupTimer() {
         timer?.dispose()
         
@@ -59,6 +63,7 @@ class MapRotationController: ObservableObject {
         timer?.disposed(by: disposeBag)
     }
     
+    /// Updates the remaining time for each map rotation
     private func updateTimers() {
         let rotations = [battleRoyale, ranked, mixtape]
         
@@ -91,6 +96,7 @@ class MapRotationController: ObservableObject {
                 // Update the rotation with the new MapInfo
                 updatedRotation.current = updatedMapInfo
                 
+                // Update the appropriate rotation based on the index
                 switch index {
                 case 0: battleRoyale = updatedRotation
                 case 1: ranked = updatedRotation

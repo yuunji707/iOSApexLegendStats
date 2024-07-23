@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// Controller class for managing Apex Legends server status
 class ServerStatusController: ObservableObject {
     @Published var serverStatus: ServerStatus?
     @Published var selectedServerType: ServerType = .origin
@@ -14,6 +15,7 @@ class ServerStatusController: ObservableObject {
     
     private let apiService = ApexAPIService()
     
+    /// Fetches the current server status from the API
     func fetchServerStatus() {
         Task {
             do {
@@ -28,6 +30,7 @@ class ServerStatusController: ObservableObject {
         }
     }
     
+    /// Updates the current region status based on the selected server type
     func updateCurrentRegionStatus() {
         guard let serverStatus = serverStatus else { return }
         
@@ -43,6 +46,7 @@ class ServerStatusController: ObservableObject {
             regionStatus = serverStatus.apexOauthCrossplay
         }
         
+        // Create an array of RegionStatusData for each region
         currentRegionStatus = [
             RegionStatusData(name: "EU West", status: regionStatus.euWest.status, responseTime: regionStatus.euWest.responseTime),
             RegionStatusData(name: "EU East", status: regionStatus.euEast.status, responseTime: regionStatus.euEast.responseTime),
@@ -55,6 +59,7 @@ class ServerStatusController: ObservableObject {
     }
 }
 
+/// Struct to hold region status data for display purposes
 struct RegionStatusData: Identifiable {
     let id = UUID()
     let name: String
@@ -62,6 +67,7 @@ struct RegionStatusData: Identifiable {
     let responseTime: Int
 }
 
+/// Enum representing different server types
 enum ServerType {
     case origin, eaNova, eaAccounts, crossplay
 }

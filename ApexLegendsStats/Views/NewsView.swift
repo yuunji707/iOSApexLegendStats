@@ -7,7 +7,9 @@
 
 import SwiftUI
 
+/// A view that displays a list of Apex Legends news items
 struct NewsView: View {
+    // MARK: - State Properties
     @State private var newsItems: [NewsItem] = []
     @State private var isLoading = false
     @State private var errorMessage: String?
@@ -56,6 +58,9 @@ struct NewsView: View {
         }
     }
     
+    // MARK: - Private Methods
+    
+    /// Loads the initial set of news items
     @Sendable
     private func loadNews() async {
         isLoading = true
@@ -64,7 +69,7 @@ struct NewsView: View {
         do {
             let items = try await newsController.fetchNews(page: currentPage)
             self.newsItems = items
-            hasMorePages = items.count == 5  // Changed to 5 items per page
+            hasMorePages = items.count == 5  // Assuming 5 items per page
         } catch {
             self.errorMessage = error.localizedDescription
         }
@@ -72,6 +77,7 @@ struct NewsView: View {
         isLoading = false
     }
     
+    /// Loads the next page of news items
     @Sendable
     private func loadMoreNews() async {
         guard !isLoading && hasMorePages else { return }
@@ -82,7 +88,7 @@ struct NewsView: View {
         do {
             let newItems = try await newsController.fetchNews(page: currentPage)
             self.newsItems.append(contentsOf: newItems)
-            hasMorePages = newItems.count == 5  // Changed to 5 items per page
+            hasMorePages = newItems.count == 5  // Assuming 5 items per page
         } catch {
             self.errorMessage = error.localizedDescription
             currentPage -= 1  // Revert page increment on error
@@ -91,6 +97,7 @@ struct NewsView: View {
         isLoading = false
     }
     
+    /// Refreshes the news list from the beginning
     @Sendable
     private func refreshNews() async {
         currentPage = 1
@@ -99,6 +106,7 @@ struct NewsView: View {
     }
 }
 
+/// A view that displays a single news item
 struct NewsItemView: View {
     let item: NewsItem
     

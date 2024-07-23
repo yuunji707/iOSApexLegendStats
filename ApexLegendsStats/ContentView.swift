@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// The main view of the app, containing a tab bar for navigation between different features
 struct ContentView: View {
     var body: some View {
         TabView {

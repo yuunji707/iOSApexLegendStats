@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Represents the overall status of various Apex Legends servers
 struct ServerStatus: Codable {
     let originLogin: RegionStatus
     let eaNovafusion: RegionStatus
@@ -21,6 +22,7 @@ struct ServerStatus: Codable {
     }
 }
 
+/// Status of servers across different regions
 struct RegionStatus: Codable {
     let euWest: ServerRegion
     let euEast: ServerRegion
@@ -41,6 +43,7 @@ struct RegionStatus: Codable {
     }
 }
 
+/// Represents the status of a specific server region
 struct ServerRegion: Codable {
     let status: String
     let httpCode: Int

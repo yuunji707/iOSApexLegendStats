@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+/// A view that displays the status of Apex Legends servers
 struct ServerStatusView: View {
     @StateObject private var controller = ServerStatusController()
     @State private var isRefreshing = false
@@ -44,6 +45,7 @@ struct ServerStatusView: View {
         }
     }
     
+    /// Picker for selecting the server type
     private var serverTypePicker: some View {
         Picker("Server Type", selection: $controller.selectedServerType) {
             Text("Origin").tag(ServerType.origin)
@@ -58,6 +60,7 @@ struct ServerStatusView: View {
         }
     }
     
+    /// Grid displaying status cards for each region
     private var statusGrid: some View {
         LazyVGrid(columns: columns, spacing: 16) {
             ForEach(controller.currentRegionStatus) { region in
@@ -66,6 +69,7 @@ struct ServerStatusView: View {
         }
     }
     
+    /// Link to the data source website
     private var dataSourceLink: some View {
         Link(destination: URL(string: "https://apexlegendsstatus.com")!) {
             Text("Data from Apex Legends Status")
@@ -74,6 +78,7 @@ struct ServerStatusView: View {
         }
     }
     
+    /// Refreshes the server status data
     private func refreshData() {
         isRefreshing = true
         controller.fetchServerStatus()
@@ -83,6 +88,7 @@ struct ServerStatusView: View {
     }
 }
 
+/// A view that displays the status of a single server region
 struct StatusCard: View {
     let region: RegionStatusData
     
@@ -105,6 +111,7 @@ struct StatusCard: View {
         .cornerRadius(10)
     }
     
+    /// Visual indicator of the server status (UP or DOWN)
     private var statusIndicator: some View {
         HStack(spacing: 4) {
             Circle()

@@ -9,6 +9,7 @@ import SwiftUI
 import RxSwift
 import RxCocoa
 
+/// A view that displays the current map rotation for Apex Legends
 struct MapRotationView: View {
     @StateObject private var controller = MapRotationController()
     
@@ -21,6 +22,7 @@ struct MapRotationView: View {
                             .scaleEffect(1.5)
                             .padding()
                     } else {
+                        // Display map rotation for each game mode
                         mapRotationSection(title: "Battle Royale", rotation: controller.battleRoyale)
                         mapRotationSection(title: "Ranked", rotation: controller.ranked)
                         mapRotationSection(title: "Mixtape", rotation: controller.mixtape)
@@ -41,6 +43,7 @@ struct MapRotationView: View {
         }
     }
     
+    /// Creates a section for a specific map rotation
     @ViewBuilder
     func mapRotationSection(title: String, rotation: MapRotation?) -> some View {
         if let rotation = rotation {
@@ -58,6 +61,7 @@ struct MapRotationView: View {
         }
     }
     
+    /// Displays information for a specific map
     @ViewBuilder
     func mapInfoView(info: MapInfo, label: String) -> some View {
         VStack(alignment: .leading, spacing: 8) {
@@ -90,6 +94,7 @@ struct MapRotationView: View {
                     .foregroundColor(.orange)
             }
             
+            // Asynchronously load and display the map image
             AsyncImage(url: URL(string: info.asset)) { image in
                 image
                     .resizable()
