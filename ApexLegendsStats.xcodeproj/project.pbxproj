@@ -16,6 +16,7 @@
 		AB1523862C4B786400FA6FA7 /* PlayerStatsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1523852C4B786400FA6FA7 /* PlayerStatsController.swift */; };
 		AB1523882C4B78CA00FA6FA7 /* MapRotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1523872C4B78CA00FA6FA7 /* MapRotationView.swift */; };
 		AB15238A2C4B792800FA6FA7 /* PlayerStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1523892C4B792800FA6FA7 /* PlayerStatsView.swift */; };
+		ABCDC9FB2C4FB6380080F6EE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = ABCDC9FA2C4FB6380080F6EE /* README.md */; };
 		ABD78C372C4E5FFC00ED9EC4 /* NewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD78C362C4E5FFC00ED9EC4 /* NewsController.swift */; };
 		ABD78C392C4E601B00ED9EC4 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD78C382C4E601B00ED9EC4 /* NewsView.swift */; };
 		ABD78C3B2C4EE58700ED9EC4 /* ServerStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD78C3A2C4EE58700ED9EC4 /* ServerStatusView.swift */; };
@@ -38,6 +39,7 @@
 		AB1523852C4B786400FA6FA7 /* PlayerStatsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStatsController.swift; sourceTree = "<group>"; };
 		AB1523872C4B78CA00FA6FA7 /* MapRotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRotationView.swift; sourceTree = "<group>"; };
 		AB1523892C4B792800FA6FA7 /* PlayerStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStatsView.swift; sourceTree = "<group>"; };
+		ABCDC9FA2C4FB6380080F6EE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		ABD78C362C4E5FFC00ED9EC4 /* NewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsController.swift; sourceTree = "<group>"; };
 		ABD78C382C4E601B00ED9EC4 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		ABD78C3A2C4EE58700ED9EC4 /* ServerStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerStatusView.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 		AB1523602C4B749B00FA6FA7 = {
 			isa = PBXGroup;
 			children = (
+				ABCDC9FA2C4FB6380080F6EE /* README.md */,
 				AB15236B2C4B749B00FA6FA7 /* ApexLegendsStats */,
 				7D398248E23DCCEAF5BC2E89 /* Pods */,
 			);
@@ -201,6 +204,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABCDC9FB2C4FB6380080F6EE /* README.md in Resources */,
 				AB1523742C4B74A000FA6FA7 /* Preview Assets.xcassets in Resources */,
 				AB1523712C4B74A000FA6FA7 /* Assets.xcassets in Resources */,
 			);
