@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		10ECD64D4D5207324E7BD464 /* Pods_ApexLegendsStats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ED645D6C645BACBBE9CB8A6 /* Pods_ApexLegendsStats.framework */; };
 		AB15236D2C4B749B00FA6FA7 /* ApexLegendsStatsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB15236C2C4B749B00FA6FA7 /* ApexLegendsStatsApp.swift */; };
 		AB15236F2C4B749B00FA6FA7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB15236E2C4B749B00FA6FA7 /* ContentView.swift */; };
 		AB1523712C4B74A000FA6FA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB1523702C4B749F00FA6FA7 /* Assets.xcassets */; };
@@ -29,8 +28,7 @@
 
 /* Begin PBXFileReference section */
 		0398A5640CBB35DC6DAC7827 /* Pods-ApexLegendsStats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApexLegendsStats.debug.xcconfig"; path = "Target Support Files/Pods-ApexLegendsStats/Pods-ApexLegendsStats.debug.xcconfig"; sourceTree = "<group>"; };
-		0ED645D6C645BACBBE9CB8A6 /* Pods_ApexLegendsStats.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApexLegendsStats.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB1523692C4B749B00FA6FA7 /* ApexLegendsStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApexLegendsStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB1523692C4B749B00FA6FA7 /* ApexLegendsStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ApexLegendsStats.app; path = "/Users/younis/Documents/ApexLegendsStats/build/Debug-iphoneos/ApexLegendsStats.app"; sourceTree = "<absolute>"; };
 		AB15236C2C4B749B00FA6FA7 /* ApexLegendsStatsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApexLegendsStatsApp.swift; sourceTree = "<group>"; };
 		AB15236E2C4B749B00FA6FA7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AB1523702C4B749F00FA6FA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,7 +54,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10ECD64D4D5207324E7BD464 /* Pods_ApexLegendsStats.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,18 +73,8 @@
 			isa = PBXGroup;
 			children = (
 				AB15236B2C4B749B00FA6FA7 /* ApexLegendsStats */,
-				AB15236A2C4B749B00FA6FA7 /* Products */,
 				7D398248E23DCCEAF5BC2E89 /* Pods */,
-				F049645A30FB20F2FF3CF5E0 /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		AB15236A2C4B749B00FA6FA7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AB1523692C4B749B00FA6FA7 /* ApexLegendsStats.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		AB15236B2C4B749B00FA6FA7 /* ApexLegendsStats */ = {
@@ -154,14 +141,6 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		F049645A30FB20F2FF3CF5E0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0ED645D6C645BACBBE9CB8A6 /* Pods_ApexLegendsStats.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -208,7 +187,7 @@
 				Base,
 			);
 			mainGroup = AB1523602C4B749B00FA6FA7;
-			productRefGroup = AB15236A2C4B749B00FA6FA7 /* Products */;
+			productRefGroup = AB1523602C4B749B00FA6FA7;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
