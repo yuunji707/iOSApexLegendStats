@@ -10,7 +10,7 @@ import RxSwift
 import RxCocoa
 
 /// Controller class for managing map rotation data in Apex Legends
-class MapRotationController: ObservableObject {
+public class MapRotationController: ObservableObject {
     // Published properties for different game modes
     @Published var battleRoyale: MapRotation?
     @Published var ranked: MapRotation?

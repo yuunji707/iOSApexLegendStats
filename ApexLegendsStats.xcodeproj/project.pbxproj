@@ -17,6 +17,21 @@
 		AB1523882C4B78CA00FA6FA7 /* MapRotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1523872C4B78CA00FA6FA7 /* MapRotationView.swift */; };
 		AB15238A2C4B792800FA6FA7 /* PlayerStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1523892C4B792800FA6FA7 /* PlayerStatsView.swift */; };
 		ABCDC9FB2C4FB6380080F6EE /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = ABCDC9FA2C4FB6380080F6EE /* README.md */; };
+		ABD32FF12C50E06800731B74 /* ApexLegendsStatsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD32FF02C50E06800731B74 /* ApexLegendsStatsTests.swift */; };
+		ABD32FFE2C50E2F600731B74 /* MapRotationModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD32FFD2C50E2F600731B74 /* MapRotationModelTests.swift */; };
+		ABD330002C50E31500731B74 /* NewsModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD32FFF2C50E31500731B74 /* NewsModelTests.swift */; };
+		ABD330022C50E3A900731B74 /* PlayerStatsModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD330012C50E3A900731B74 /* PlayerStatsModelTests.swift */; };
+		ABD330042C50E3D600731B74 /* ServerStatusModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD330032C50E3D600731B74 /* ServerStatusModelTests.swift */; };
+		ABD330062C50E4DC00731B74 /* MapRotationControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD330052C50E4DC00731B74 /* MapRotationControllerTests.swift */; };
+		ABD330082C50E4FB00731B74 /* PlayerStatsControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD330072C50E4FB00731B74 /* PlayerStatsControllerTests.swift */; };
+		ABD3300A2C50E51900731B74 /* NewsControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD330092C50E51900731B74 /* NewsControllerTests.swift */; };
+		ABD3300C2C50E53200731B74 /* ServerStatusControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD3300B2C50E53200731B74 /* ServerStatusControllerTests.swift */; };
+		ABD3300F2C50E7EF00731B74 /* ApexAPIServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD3300E2C50E7EF00731B74 /* ApexAPIServiceTests.swift */; };
+		ABD330112C50E81300731B74 /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD330102C50E81300731B74 /* MockAPIService.swift */; };
+		ABD330132C50F66F00731B74 /* MapRotationViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD330122C50F66F00731B74 /* MapRotationViewTests.swift */; };
+		ABD330152C50F6C100731B74 /* NewsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD330142C50F6C100731B74 /* NewsViewTests.swift */; };
+		ABD330172C50F6D400731B74 /* PlayerStatsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD330162C50F6D400731B74 /* PlayerStatsViewTests.swift */; };
+		ABD330192C50F6E400731B74 /* ServerStatusViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD330182C50F6E400731B74 /* ServerStatusViewTests.swift */; };
 		ABD78C372C4E5FFC00ED9EC4 /* NewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD78C362C4E5FFC00ED9EC4 /* NewsController.swift */; };
 		ABD78C392C4E601B00ED9EC4 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD78C382C4E601B00ED9EC4 /* NewsView.swift */; };
 		ABD78C3B2C4EE58700ED9EC4 /* ServerStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD78C3A2C4EE58700ED9EC4 /* ServerStatusView.swift */; };
@@ -27,9 +42,19 @@
 		ABD78C452C4EEBCA00ED9EC4 /* ServerStatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD78C442C4EEBCA00ED9EC4 /* ServerStatusModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		ABD32FF22C50E06800731B74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB1523612C4B749B00FA6FA7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB1523682C4B749B00FA6FA7;
+			remoteInfo = ApexLegendsStats;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		0398A5640CBB35DC6DAC7827 /* Pods-ApexLegendsStats.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApexLegendsStats.debug.xcconfig"; path = "Target Support Files/Pods-ApexLegendsStats/Pods-ApexLegendsStats.debug.xcconfig"; sourceTree = "<group>"; };
-		AB1523692C4B749B00FA6FA7 /* ApexLegendsStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = ApexLegendsStats.app; path = "/Users/younis/Documents/ApexLegendsStats/build/Debug-iphoneos/ApexLegendsStats.app"; sourceTree = "<absolute>"; };
+		4B475F91FB94C05980E3A343 /* Pods-ApexLegendsStatsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApexLegendsStatsTests.release.xcconfig"; path = "Target Support Files/Pods-ApexLegendsStatsTests/Pods-ApexLegendsStatsTests.release.xcconfig"; sourceTree = "<group>"; };
 		AB15236C2C4B749B00FA6FA7 /* ApexLegendsStatsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApexLegendsStatsApp.swift; sourceTree = "<group>"; };
 		AB15236E2C4B749B00FA6FA7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AB1523702C4B749F00FA6FA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,6 +65,23 @@
 		AB1523872C4B78CA00FA6FA7 /* MapRotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRotationView.swift; sourceTree = "<group>"; };
 		AB1523892C4B792800FA6FA7 /* PlayerStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStatsView.swift; sourceTree = "<group>"; };
 		ABCDC9FA2C4FB6380080F6EE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		ABD32FE92C50DFB800731B74 /* ApexLegendsStats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApexLegendsStats.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABD32FF02C50E06800731B74 /* ApexLegendsStatsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApexLegendsStatsTests.swift; sourceTree = "<group>"; };
+		ABD32FFD2C50E2F600731B74 /* MapRotationModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRotationModelTests.swift; sourceTree = "<group>"; };
+		ABD32FFF2C50E31500731B74 /* NewsModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModelTests.swift; sourceTree = "<group>"; };
+		ABD330012C50E3A900731B74 /* PlayerStatsModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStatsModelTests.swift; sourceTree = "<group>"; };
+		ABD330032C50E3D600731B74 /* ServerStatusModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerStatusModelTests.swift; sourceTree = "<group>"; };
+		ABD330052C50E4DC00731B74 /* MapRotationControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRotationControllerTests.swift; sourceTree = "<group>"; };
+		ABD330072C50E4FB00731B74 /* PlayerStatsControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStatsControllerTests.swift; sourceTree = "<group>"; };
+		ABD330092C50E51900731B74 /* NewsControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsControllerTests.swift; sourceTree = "<group>"; };
+		ABD3300B2C50E53200731B74 /* ServerStatusControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerStatusControllerTests.swift; sourceTree = "<group>"; };
+		ABD3300D2C50E60600731B74 /* ApexLegendsStatsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ApexLegendsStatsTests.xctest; path = "/Users/younis/Documents/ApexLegendsStats/build/Debug-iphoneos/ApexLegendsStatsTests.xctest"; sourceTree = "<absolute>"; };
+		ABD3300E2C50E7EF00731B74 /* ApexAPIServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApexAPIServiceTests.swift; sourceTree = "<group>"; };
+		ABD330102C50E81300731B74 /* MockAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIService.swift; sourceTree = "<group>"; };
+		ABD330122C50F66F00731B74 /* MapRotationViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRotationViewTests.swift; sourceTree = "<group>"; };
+		ABD330142C50F6C100731B74 /* NewsViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewTests.swift; sourceTree = "<group>"; };
+		ABD330162C50F6D400731B74 /* PlayerStatsViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStatsViewTests.swift; sourceTree = "<group>"; };
+		ABD330182C50F6E400731B74 /* ServerStatusViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerStatusViewTests.swift; sourceTree = "<group>"; };
 		ABD78C362C4E5FFC00ED9EC4 /* NewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsController.swift; sourceTree = "<group>"; };
 		ABD78C382C4E601B00ED9EC4 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		ABD78C3A2C4EE58700ED9EC4 /* ServerStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerStatusView.swift; sourceTree = "<group>"; };
@@ -48,11 +90,19 @@
 		ABD78C402C4EEBB300ED9EC4 /* PlayerStatsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStatsModel.swift; sourceTree = "<group>"; };
 		ABD78C422C4EEBBC00ED9EC4 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		ABD78C442C4EEBCA00ED9EC4 /* ServerStatusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerStatusModel.swift; sourceTree = "<group>"; };
+		ACDF580B9E5E4DABC330EF88 /* Pods-ApexLegendsStatsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApexLegendsStatsTests.debug.xcconfig"; path = "Target Support Files/Pods-ApexLegendsStatsTests/Pods-ApexLegendsStatsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D25770714456904CE82D720A /* Pods-ApexLegendsStats.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApexLegendsStats.release.xcconfig"; path = "Target Support Files/Pods-ApexLegendsStats/Pods-ApexLegendsStats.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AB1523662C4B749B00FA6FA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABD32FEB2C50E06800731B74 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -67,6 +117,8 @@
 			children = (
 				0398A5640CBB35DC6DAC7827 /* Pods-ApexLegendsStats.debug.xcconfig */,
 				D25770714456904CE82D720A /* Pods-ApexLegendsStats.release.xcconfig */,
+				ACDF580B9E5E4DABC330EF88 /* Pods-ApexLegendsStatsTests.debug.xcconfig */,
+				4B475F91FB94C05980E3A343 /* Pods-ApexLegendsStatsTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -77,6 +129,8 @@
 				ABCDC9FA2C4FB6380080F6EE /* README.md */,
 				AB15236B2C4B749B00FA6FA7 /* ApexLegendsStats */,
 				7D398248E23DCCEAF5BC2E89 /* Pods */,
+				ABD32FE92C50DFB800731B74 /* ApexLegendsStats.app */,
+				ABD32FEF2C50E06800731B74 /* ApexLegendsStatsTests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,6 +198,60 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		ABD32FEF2C50E06800731B74 /* ApexLegendsStatsTests */ = {
+			isa = PBXGroup;
+			children = (
+				ABD32FFC2C50E23200731B74 /* ViewTests */,
+				ABD32FFB2C50E22900731B74 /* ServiceTests */,
+				ABD32FFA2C50E22000731B74 /* ControllerTests */,
+				ABD32FF92C50E20C00731B74 /* ModelTests */,
+				ABD32FF02C50E06800731B74 /* ApexLegendsStatsTests.swift */,
+			);
+			path = ApexLegendsStatsTests;
+			sourceTree = "<group>";
+		};
+		ABD32FF92C50E20C00731B74 /* ModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				ABD32FFD2C50E2F600731B74 /* MapRotationModelTests.swift */,
+				ABD32FFF2C50E31500731B74 /* NewsModelTests.swift */,
+				ABD330012C50E3A900731B74 /* PlayerStatsModelTests.swift */,
+				ABD330032C50E3D600731B74 /* ServerStatusModelTests.swift */,
+			);
+			path = ModelTests;
+			sourceTree = "<group>";
+		};
+		ABD32FFA2C50E22000731B74 /* ControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				ABD330052C50E4DC00731B74 /* MapRotationControllerTests.swift */,
+				ABD330072C50E4FB00731B74 /* PlayerStatsControllerTests.swift */,
+				ABD330092C50E51900731B74 /* NewsControllerTests.swift */,
+				ABD3300B2C50E53200731B74 /* ServerStatusControllerTests.swift */,
+			);
+			path = ControllerTests;
+			sourceTree = "<group>";
+		};
+		ABD32FFB2C50E22900731B74 /* ServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				ABD3300E2C50E7EF00731B74 /* ApexAPIServiceTests.swift */,
+				ABD330102C50E81300731B74 /* MockAPIService.swift */,
+			);
+			path = ServiceTests;
+			sourceTree = "<group>";
+		};
+		ABD32FFC2C50E23200731B74 /* ViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				ABD330122C50F66F00731B74 /* MapRotationViewTests.swift */,
+				ABD330142C50F6C100731B74 /* NewsViewTests.swift */,
+				ABD330162C50F6D400731B74 /* PlayerStatsViewTests.swift */,
+				ABD330182C50F6E400731B74 /* ServerStatusViewTests.swift */,
+			);
+			path = ViewTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -163,8 +271,28 @@
 			);
 			name = ApexLegendsStats;
 			productName = ApexLegendsStats;
-			productReference = AB1523692C4B749B00FA6FA7 /* ApexLegendsStats.app */;
+			productReference = ABD32FE92C50DFB800731B74 /* ApexLegendsStats.app */;
 			productType = "com.apple.product-type.application";
+		};
+		ABD32FED2C50E06800731B74 /* ApexLegendsStatsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABD32FF62C50E06800731B74 /* Build configuration list for PBXNativeTarget "ApexLegendsStatsTests" */;
+			buildPhases = (
+				F54EBA4414B7C050901C9803 /* [CP] Check Pods Manifest.lock */,
+				ABD32FEA2C50E06800731B74 /* Sources */,
+				ABD32FEB2C50E06800731B74 /* Frameworks */,
+				ABD32FEC2C50E06800731B74 /* Resources */,
+				B49B031C87A5D7277CB250F5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABD32FF32C50E06800731B74 /* PBXTargetDependency */,
+			);
+			name = ApexLegendsStatsTests;
+			productName = ApexLegendsStatsTests;
+			productReference = ABD3300D2C50E60600731B74 /* ApexLegendsStatsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -178,6 +306,10 @@
 				TargetAttributes = {
 					AB1523682C4B749B00FA6FA7 = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					ABD32FED2C50E06800731B74 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = AB1523682C4B749B00FA6FA7;
 					};
 				};
 			};
@@ -195,6 +327,7 @@
 			projectRoot = "";
 			targets = (
 				AB1523682C4B749B00FA6FA7 /* ApexLegendsStats */,
+				ABD32FED2C50E06800731B74 /* ApexLegendsStatsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -207,6 +340,13 @@
 				ABCDC9FB2C4FB6380080F6EE /* README.md in Resources */,
 				AB1523742C4B74A000FA6FA7 /* Preview Assets.xcassets in Resources */,
 				AB1523712C4B74A000FA6FA7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABD32FEC2C50E06800731B74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +370,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ApexLegendsStats/Pods-ApexLegendsStats-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B49B031C87A5D7277CB250F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ApexLegendsStatsTests/Pods-ApexLegendsStatsTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ApexLegendsStatsTests/Pods-ApexLegendsStatsTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ApexLegendsStatsTests/Pods-ApexLegendsStatsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B941747A989B36B70B8039E6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -246,6 +403,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ApexLegendsStats-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F54EBA4414B7C050901C9803 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ApexLegendsStatsTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -277,7 +456,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ABD32FEA2C50E06800731B74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABD3300A2C50E51900731B74 /* NewsControllerTests.swift in Sources */,
+				ABD330192C50F6E400731B74 /* ServerStatusViewTests.swift in Sources */,
+				ABD32FFE2C50E2F600731B74 /* MapRotationModelTests.swift in Sources */,
+				ABD3300F2C50E7EF00731B74 /* ApexAPIServiceTests.swift in Sources */,
+				ABD330002C50E31500731B74 /* NewsModelTests.swift in Sources */,
+				ABD330022C50E3A900731B74 /* PlayerStatsModelTests.swift in Sources */,
+				ABD3300C2C50E53200731B74 /* ServerStatusControllerTests.swift in Sources */,
+				ABD330082C50E4FB00731B74 /* PlayerStatsControllerTests.swift in Sources */,
+				ABD330152C50F6C100731B74 /* NewsViewTests.swift in Sources */,
+				ABD32FF12C50E06800731B74 /* ApexLegendsStatsTests.swift in Sources */,
+				ABD330172C50F6D400731B74 /* PlayerStatsViewTests.swift in Sources */,
+				ABD330062C50E4DC00731B74 /* MapRotationControllerTests.swift in Sources */,
+				ABD330132C50F66F00731B74 /* MapRotationViewTests.swift in Sources */,
+				ABD330112C50E81300731B74 /* MockAPIService.swift in Sources */,
+				ABD330042C50E3D600731B74 /* ServerStatusModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ABD32FF32C50E06800731B74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB1523682C4B749B00FA6FA7 /* ApexLegendsStats */;
+			targetProxy = ABD32FF22C50E06800731B74 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		AB1523752C4B74A000FA6FA7 /* Debug */ = {
@@ -454,6 +663,44 @@
 			};
 			name = Release;
 		};
+		ABD32FF42C50E06800731B74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACDF580B9E5E4DABC330EF88 /* Pods-ApexLegendsStatsTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N753B6F22Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Younis.ApexLegendsStatsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ApexLegendsStats.app/ApexLegendsStats";
+			};
+			name = Debug;
+		};
+		ABD32FF52C50E06800731B74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B475F91FB94C05980E3A343 /* Pods-ApexLegendsStatsTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N753B6F22Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Younis.ApexLegendsStatsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ApexLegendsStats.app/ApexLegendsStats";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -471,6 +718,15 @@
 			buildConfigurations = (
 				AB1523782C4B74A000FA6FA7 /* Debug */,
 				AB1523792C4B74A000FA6FA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABD32FF62C50E06800731B74 /* Build configuration list for PBXNativeTarget "ApexLegendsStatsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABD32FF42C50E06800731B74 /* Debug */,
+				ABD32FF52C50E06800731B74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

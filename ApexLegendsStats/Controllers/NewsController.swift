@@ -8,7 +8,7 @@
 import Foundation
 
 /// Controller class for fetching and managing Apex Legends news
-class NewsController {
+public class NewsController {
     private let apexAPIService = ApexAPIService()
     private let itemsPerPage = 5
     

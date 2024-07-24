@@ -8,7 +8,7 @@
 import SwiftUI
 
 /// Controller class for managing Apex Legends server status
-class ServerStatusController: ObservableObject {
+public class ServerStatusController: ObservableObject {
     @Published var serverStatus: ServerStatus?
     @Published var selectedServerType: ServerType = .origin
     @Published var currentRegionStatus: [RegionStatusData] = []
