@@ -19,6 +19,7 @@ Apex Legends Stats is an iOS application that provides real-time information and
 - **Cocoapods**: Used for dependency management.
 - **Apex Legends API**: The data source for all Apex Legends related information.
 - **Model-View-Controller (MVC)**: The architectural pattern used to structure the app.
+- **XCTest**: Used for unit testing and UI testing to ensure code quality and reliability.
 
 ## Architecture
 
