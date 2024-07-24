@@ -5,12 +5,6 @@
 //  Created by Younis on 7/19/24.
 //
 
-//
-//  ApexAPIService.swift
-//  ApexLegendsStats
-//
-//  Created by Younis on 7/19/24.
-//
 
 import Foundation
 import RxSwift
