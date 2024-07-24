@@ -18,7 +18,7 @@ import RxSwift
 /// A service class for interacting with the Apex Legends API
 class ApexAPIService {
     // API credentials and base URL
-    private let apiKey = "58677c0c1d7598df9e4859360bad184f"
+    private let apiKey = "YOUR_API_KEY_HERE"
     private let baseURL = "https://api.mozambiquehe.re"
     
     /// Fetches the current map rotation
