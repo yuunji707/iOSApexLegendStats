@@ -1,6 +1,6 @@
 # Privacy Policy for [Apex Legends Stats]
 
-_Last updated: [Sunday, August 25th]
+Last updated: [Sunday, August 25th]
 
 ## Introduction
 
